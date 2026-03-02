@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mpepe App</title>
+    <style>
+      :root {
+        --bg: #f4f7fb;
+        --card: #ffffff;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --accent: #0f766e;
+        --border: #dbe4ee;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Segoe UI, Tahoma, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, #e4f0ff 0%, transparent 45%),
+          linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+        padding: 24px;
+      }
+      .card {
+        max-width: 980px;
+        margin: 0 auto;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+        overflow: hidden;
+      }
+      .header {
+        padding: 18px 20px;
+        border-bottom: 1px solid var(--border);
+      }
+      .title {
+        margin: 0;
+        font-size: 20px;
+        color: var(--accent);
+      }
+      .subtitle {
+        margin: 6px 0 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      pre {
+        margin: 0;
+        padding: 20px;
+        min-height: 420px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <header class="header">
+        <h1 class="title">Mpepe App</h1>
+        <p class="subtitle">Showing content from the existing file: mpe</p>
+      </header>
+      <pre id="content">Loading...</pre>
+    </main>
+    <script src="renderer.js"></script>
+  </body>
+</html>

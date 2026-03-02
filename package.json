@@ -1,0 +1,31 @@
+{
+  "name": "mpepe-app",
+  "version": "1.0.0",
+  "description": "Downloadable desktop app wrapper for mpe",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^36.3.2",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.creativekeagency.mpepe",
+    "productName": "Mpepe",
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer.js",
+      "index.html",
+      "mpe",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "portable"
+      ]
+    }
+  }
+}
